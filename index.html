@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b0d0b6e33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ATM BODY -->
+
+    <div class="atm">
+
+        <div class="top">
+
+            <h1>🏦 STATE BANK OF INDIA</h1>
+
+            <p>24 × 7 Banking Service</p>
+
+        </div>
+
+        <!-- LOGIN SCREEN -->
+
+        <div id="loginScreen">
+
+            <div class="card">
+
+                💳
+
+            </div>
+
+            <h2>Insert Card</h2>
+
+            <p>Enter Your 4 Digit PIN</p>
+
+            <input
+                type="password"
+                maxlength="4"
+                id="pin"
+                placeholder="****"
+            >
+
+            <button onclick="login()">
+
+                Login
+
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+        <!-- DASHBOARD -->
+
+        <div id="dashboard">
+
+            <h2>
+
+                Welcome User 👋
+
+            </h2>
+
+            <div class="balanceCard">
+
+                <h3>
+
+                    Available Balance
+
+                </h3>
+
+                <h1 id="balance">
+
+                
+
+                </h1>
+
+            </div>
+
+            <div class="menu">
+
+                <button onclick="showBalance()">
+
+                    💰 Balance Inquiry
+
+                </button>
+
+                <button onclick="depositMoney()">
+
+                    💵 Deposit
+
+                </button>
+
+                <button onclick="withdrawMoney()">
+
+                    💸 Withdraw
+
+                </button>
+
+                <button onclick="fastCash()">
+
+                    ⚡ Fast Cash
+
+                </button>
+
+                <button onclick="miniStatement()">
+
+                    📄 Mini Statement
+
+                </button>
+
+                <button onclick="changePin()">
+
+                    🔑 Change PIN
+
+                </button>
+
+                <button onclick="logout()">
+
+                    🚪 Logout
+
+                </button>
+
+            </div>
+
+            <div id="output">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
